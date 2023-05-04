@@ -1,5 +1,5 @@
 {
-    "name": "christyB/sftp-api-bundle",
+    "name": "christyb/sftp-api-bundle",
     "description": "list files and directories of a sftp server, possibility to search by file or content",
     "type": "symfony-bundle",
     "license": "MIT",
