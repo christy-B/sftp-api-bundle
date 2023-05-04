@@ -51,9 +51,13 @@ the differents routes availables in this bundle:
 
 ## Other 
 
-No forget environment variables
+1. No forget environment variables(sftp server)
+2. install phpseclib in your project
 
-### sftp
+### 1. sftp
 SFTP_HOST= #host of your sftp server
 SFTP_PASSWORD= #the password
 SFTP_USER= # the user
+
+### 2. phpseclib
+composer require phpseclib/phpseclib:~3.0
