@@ -17,7 +17,7 @@ and finally to allow the search by content.
 Require the bundle with composer:
 
 ```composer
-composer require wynd/sftp-api-bundle
+composer require christyb/sftp-api-bundle
 ```
 
 ### 2. Add WyndApiBundle routing
@@ -25,7 +25,7 @@ composer require wynd/sftp-api-bundle
 Add these lines in your `config/routes/routes.yaml`:
 
 ```
-wynd_sftp_api_bundle:
+sftp_api_bundle:
   resource: '@WyndApiBundle/Resources/config/routes.yaml'
   prefix:
 ```
