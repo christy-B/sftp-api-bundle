@@ -1,0 +1,19 @@
+{
+    "name": "christyB/sftp-api-bundle",
+    "description": "list files and directories of a sftp server, possibility to search by file or content",
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "christyB",
+            "email": "bienechristy94@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Wynd\\ApiBundle\\": ""
+        }
+    },
+    "require": {}
+}

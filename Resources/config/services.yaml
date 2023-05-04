@@ -1,0 +1,29 @@
+services:
+  _defaults:
+    autowire: true      # Automatically injects dependencies in your services.
+    autoconfigure: true # Automatically registers your services as commands, event subscribers, etc.
+
+  Wynd\ApiBundle\:
+    resource: '../../'
+    exclude:
+      - '../../DependencyInjection/'
+      - '../../Resources/'
+      - '../../Tests/'
+      # Tu mets ici les dossiers a exclure simplement...
+
+
+  Wynd\ApiBundle\Service\Login\LoginSFTP:
+    class: Wynd\ApiBundle\Service\Login\LoginSFTP
+    arguments:
+        $host: '%env(SFTP_HOST)%'
+        $user: '%env(SFTP_USER)%'
+        $password: '%env(SFTP_PASSWORD)%'
+    
+  Wynd\ApiBundle\Service\Search\FilterModul:
+    class: Wynd\ApiBundle\Service\Search\FilterModul
+    arguments:
+        $host: '%env(SFTP_HOST)%'
+        $user: '%env(SFTP_USER)%'
+        $password: '%env(SFTP_PASSWORD)%'
+
+ 
